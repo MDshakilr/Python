@@ -1,0 +1,16 @@
+
+
+
+
+print("shakil")
+print('shakil')
+print("'shakil'")
+print(0)
+print("03567")
+
+
+
+#single comment
+'''hi
+hi
+hi'''
