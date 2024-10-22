@@ -1,0 +1,131 @@
+'''
+Tuples are used to store multiple items in a single variable.
+A tuple is a collection which is ordered and unchangeable.
+
+Tuples are written with round brackets().
+'''
+x=("sun","moon","earth")
+print(x)
+#lenght
+x=("sun","moon","earth")
+print(len(x))
+
+#type of tuples
+tuple1 = ("apple", "banana", "cherry")
+tuple2 = (1, 5, 7, 9, 3)
+tuple3 = (True, False, False)
+
+print(tuple1)
+print(tuple2)
+print(tuple3)
+
+
+
+tuple1 = ("abc", 34, True, 40, "male")
+print(tuple1)
+print(type(tuple1))
+
+#Access Tuple Items
+
+thistuple = ("apple", "banana", "cherry")
+print(thistuple[1])
+
+#Negative Indexing
+
+thistuple = ("apple", "banana", "cherry")
+print(thistuple[-1])
+print(thistuple[-2])
+
+#Range of Indexes
+
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(thistuple[2:5])
+
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+
+print(thistuple[:4])
+
+
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(thistuple[2:])
+
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(thistuple[-4:-1])
+
+#Negative indexing means starting from the end of the tuple.
+
+#This example returns the items from index -4 (included) to index -1 (excluded)
+
+#Remember that the last item has the index -1,
+'''
+Change Tuple Values
+Once a tuple is created, you cannot change its values. Tuples are unchangeable, or immutable as it also is called.
+
+But there is a workaround. You can convert the tuple into a list, change the list, and convert the list back into a tuple.
+'''
+x = ("apple", "banana", "cherry")
+y = list(x)
+y[1] = "kiwi"
+x = tuple(y)
+
+print(x)
+
+#Update Tuples
+
+
+#add
+x = ("apple", "banana", "cherry")
+y = list(x) #TUBLE KE LIST A COVERT
+y.append("shakil")
+x = tuple(y)#list KE tuple A COVERT
+print(x)
+
+#remove
+x = ("apple", "banana", "cherry")
+y = list(x) #TUBLE KE LIST A COVERT
+y.remove("banana")
+x = tuple(y)#list KE tuple A COVERT
+print(x)
+
+
+#unpack tuple
+x = ("apple", "banana", "cherry")
+(a,b,c) = x
+print(c)
+
+#using of astrick
+x = ("apple", "banana", "cherry","sun","moon","earth")
+(a,b,*c) = x
+print(c)
+
+x = ("apple", "banana", "cherry","sun","moon","earth")
+(a,*b,c) = x
+print(b)
+print(c)
+print(a)
+
+
+x = ("apple", "banana", "cherry","sun","moon","earth")
+(*a,) = x
+print(a)
+
+
+#loop
+
+thistuple = ("apple", "banana", "cherry")
+for i in range(len(thistuple)):
+    print(thistuple[i])
+
+#join tuple
+tuple1 = ("a", "b" , "c")
+tuple2 = (1, 2, 3)
+
+tuple3 = tuple1 + tuple2
+print(tuple3)
+
+
+
+fruits = ("apple", "banana", "cherry")
+mytuple = fruits * 2
+
+print(mytuple)
