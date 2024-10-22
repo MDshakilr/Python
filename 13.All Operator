@@ -1,0 +1,191 @@
+'''
+Python divides the operators in the following groups:
+
+Arithmetic operators
+Assignment operators
+Comparison operators
+Logical operators
+Identity operators
+Membership operators
+Bitwise operators
+'''
+'''
+Arithmetic:
+Operator	Name	Example	
++	Addition	x + y	
+-	Subtraction	x - y	
+*	Multiplication	x * y	
+/	Division	x / y	
+%	Modulus	x % y	
+**	Exponentiation	x ** y	
+//	Floor division	x // y
+
+'''
+a=34
+b=23
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+print(a%b)
+print(a**b)#34*34*34..........total 34 bar
+print(a//b) #1.4782->1
+
+
+
+#Assignment operators
+'''
+Operator	Example	Same As	
+=	  x = 5	         x = 5	
++=	  x += 3	        x = x + 3	
+-=	  x -= 3          	x = x - 3	
+*=	 x *= 3	     x = x * 3	
+/=	 x /= 3	        x = x / 3	
+%=	 x %= 3          	x = x % 3	
+//=	  x //= 3     	x = x // 3	
+**=	 x **= 3       	x = x ** 3	
+&=	 x &= 3	       x = x & 3	
+|=	 x |= 3	     x = x | 3	
+^=	  x ^= 3	     x = x ^ 3	
+>>=	  x >>= 3	         x = x >> 3	
+<<=	  x <<= 3	          x = x << 3	
+:=	  print(x := 3)       	x = 3
+                          print(x)
+                          '''
+
+x=5
+print(x)
+
+
+x=5
+x+=10        #x=x+10
+print(x)
+
+
+
+#Comparison operators
+'''
+Operator	Name	Example	
+==	Equal	x == y	
+!=	Not equal	x != y	
+>	Greater than	x > y	
+<	Less than	x < y	
+>=	Greater than or equal to	x >= y	
+<=	Less than or equal to	x <= y
+'''
+
+x=23
+y=67
+if x>y:
+    print("true")
+else:
+    print("flase")
+
+
+
+#Logical operators
+#and or not
+x = 5
+
+print(x > 3 and x < 10)
+
+x = 5
+
+print(x > 3 or x < 4)
+
+x = 5
+
+print(not(x > 3 and x < 10))## returns False because not is used to reverse the result
+
+
+#swapping
+a=23
+b=45
+a,b=b,a
+print("now the value of a:",a)
+
+
+#Identity Operators
+
+
+x = ["apple", "banana"]
+y = ["apple", "banana"]
+z = x
+
+print(x is z)
+
+# returns True because z is the same object as x
+
+print(x is y)
+
+# returns False because x is not the same object as y, even if they have the same content
+
+print(x == y)
+'''
+to demonstrate
+ the difference betweeen "is" and "==": this
+comparison returns True because x is equal to y
+'''
+
+
+#Membership Operators
+
+x = ["apple", "banana"]
+
+print("banana" in x)
+
+'''returns True because a sequence with the value "banana" is in the list
+'''
+
+
+#Bitwise Operators
+
+'''
+Operator	Name	
+& 	AND	
+|	OR	
+^	XOR		
+~	NOT
+<<	Zero fill left shift
+>>	Signed right shif
+'''
+a = 10
+b = 4
+
+# Print bitwise AND operation
+print("a & b =", a & b)
+
+a = 10
+b = 4
+
+# Print bitwise OR operation
+print("a | b =", a | b)
+
+a = 10
+b = 4
+
+# print bitwise XOR operation
+print("a ^ b =", a ^ b)
+
+
+a = 10
+b = 4
+
+# Print bitwise NOT operation
+print("~a =", ~a)
+
+
+a = 10
+b = -10
+
+# print bitwise right shift operator
+print("a >> 1 =", a >> 1)
+print("b >> 1 =", b >> 1)
+
+
+a = 5
+b = -10
+
+# print bitwise left shift operator
+print("a << 1 =", a << 1)
+print("b << 1 =", b << 1)
