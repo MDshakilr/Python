@@ -1,0 +1,38 @@
+#list, tuple, range
+
+'''
+square=[]
+'''
+
+
+
+
+
+
+#lis is mutable
+list=["shakil","rana","rafi","sifat"]
+list[1]="fahim"
+print(list)
+
+list=[1,4,5,6,7,9]
+print(list)
+
+
+
+#tuple is immutable
+tuple=("shakil","rana","rafi","sifat")
+print(tuple)
+
+
+
+#rangetype
+
+ran=range(8)
+print(ran)
+
+
+#
+ran=range(8)
+for i in ran:
+    print (i)
+
