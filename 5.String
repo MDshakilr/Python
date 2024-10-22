@@ -35,3 +35,9 @@ print(a[3])
 
 a = "HelloWorld!"
 print(len(a))
+
+
+MyName="shakil"
+LastName="rana"
+print("my name is" + ' '+ MyName)
+
