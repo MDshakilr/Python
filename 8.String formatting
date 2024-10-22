@@ -1,0 +1,22 @@
+num1=20
+num2=30
+print(f"sum={num1+num2}")
+print(f"sum={50+45}")
+
+
+
+
+
+
+
+userName= "shakil"
+print(f"my name is: {userName}")
+
+
+
+
+
+userName= "shakil"
+lastName="rana"
+print(f"my name is: {userName}+{lastName}")
+print(f"my name is {userName} & my last name{lastName} ")
