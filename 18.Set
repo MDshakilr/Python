@@ -1,0 +1,124 @@
+'''
+*A set is a collection which is unordered, unchangeable*, and unindexed.
+*Sets are written with curly brackets{}
+*set items are unchangeable, but you can remove items and add new items.
+*Set is one of 4 built-in data types in Python used to store
+collections of data, the other 3 are List, Tuple, and Dictionary
+*do not allow duplicate values.
+
+
+'''
+
+set={1,2,3,4}
+print(set)
+
+set1={"shakil","rafi","amin","shakil",True,1}
+print(set1)
+#do not allow duplicate values.
+#unorder
+
+set1={"shakil","rafi","amin","shakil",True,1}
+print(len(set1))  #{"shakil", "rafi", "amin", True}=4
+
+
+'''In Python sets, True and 1 are considered
+ the same because the value of True is treated as 1.
+  Therefore, both True and 1 will be counted as a 
+  single element in the set.
+
+'''
+
+#Access Set Items
+set={1,2,3,4}
+for i in set:
+ print(set)
+
+set = {1, 2, 3, 4}
+for i in set:
+     print(i)
+
+set = {"apple", "banana", "cherry"}
+
+print("banana" in set)
+
+
+#Add Set Items
+
+set={1,2,3,4,"shakil"}
+set.add(8)
+print(set)
+
+#update method
+set1={"shakil","sifat","Fahim"}
+set2={1,2,3}
+set1.update(set2)
+print(set1)
+
+
+
+#set and list
+
+thisset = {"apple", "banana", "cherry"}
+mylist = ["kiwi", "orange"]
+thisset.update(mylist)
+print(thisset)
+
+
+
+#remove(remove and discard)
+
+thisset = {"apple", "banana", "cherry"}
+thisset.remove("banana") #set element nsi but oita remove korte caile error ase
+print(thisset)
+
+thisset = {"apple", "banana", "cherry"}
+thisset.discard("banana")#error ashbe na
+print(thisset)
+
+thisset = {"apple", "banana", "cherry"}
+x = thisset.pop()
+print(x)
+print(thisset)
+
+thisset = {"apple", "banana", "cherry"}
+thisset.clear()
+print(thisset)
+
+'''
+thisset1 = {"apple", "banana", "cherry"}
+del thisset
+print(thisset1)
+'''
+
+
+
+
+#Join set
+
+'''
+There are several ways to join two or more sets in Python.
+
+The union() and update() methods joins all items from both sets.
+
+The intersection() method keeps ONLY the duplicates.
+
+The difference() method keeps the items from the first set that are not in the other set(s).
+
+The symmetric_difference() method keeps all items EXCEPT the duplicates.
+
+'''
+
+set1 = {"a", "b", "c"}
+set2 = {1, 2, 3}
+
+set3 = set1.union(set2)
+print(set3)
+
+#multipule set join
+set1 = {"a", "b", "c"}
+set2 = {1, 2, 3}
+set3 = {"John", "Elena"}
+set4 = {"apple", "bananas", "cherry"}
+
+myset = set1.union(set2, set3, set4)
+print(myset)
