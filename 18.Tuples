@@ -129,3 +129,15 @@ fruits = ("apple", "banana", "cherry")
 mytuple = fruits * 2
 
 print(mytuple)
+
+
+
+#count method
+tuples=(1,2,3,4,6,6,7)
+print(tuples.count(6))
+
+
+#index method
+tuples=(1,2,3,4,6,2,'shakil')
+print(tuples.index(4))
+print(tuples.index('shakil'))
