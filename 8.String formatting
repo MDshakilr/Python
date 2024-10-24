@@ -20,3 +20,20 @@ userName= "shakil"
 lastName="rana"
 print(f"my name is: {userName}+{lastName}")
 print(f"my name is {userName} & my last name{lastName} ")
+
+
+
+num1=20
+num2=30
+print(f"{num1}+{num2}={num1-num2}) #20-30=-10
+
+'''
+
+print("shakil")
+print("rana")
+'''
+print("shakil",end="")
+print("rana")
+
+
+
