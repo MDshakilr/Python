@@ -1,0 +1,156 @@
+'''List is a collection which is ordered and changeable. Allows duplicate members.
+Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
+Dictionary is a collection which is ordered** and changeable. No duplicate members.
+'''
+dic={
+    "Name":"shakil",
+    "id":1234,
+    "section":"4c",
+    "depertment":"CSE"
+
+}
+print(dic)
+print(dic['Name'])
+#x = dic.get("Name")
+#print(x)
+
+#Duplicates Not Allowed
+
+dict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964,
+  "year": 2020
+}
+print(dict)
+
+
+#length
+dic={
+    "Name":"shakil",
+    "id":1234,
+    "section":"4c",
+    "depertment":"CSE"
+
+}
+print(len(dic))
+dict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964,
+  "year": 2020
+}
+print(len(dict))
+
+
+
+#dict() Constructor
+
+'''
+thisdict = dict(name="John", age=36, country="Norway")
+print(thisdict)
+'''
+
+#change value
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+thisdict["year"] = 2018
+#thisdict.update({"year": 2018})
+
+print(thisdict)
+
+
+#add data
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict["color"] = "red"
+print(thisdict)
+
+#remove
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.pop("model")
+print(thisdict)
+#del
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+del thisdict["model"]
+
+#clear
+
+print(thisdict)
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.clear()
+print(thisdict)
+
+#copy
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+mydict = thisdict.copy()
+print(mydict)
+
+
+
+
+
+
+
+
+
+
+
+
+
+#nested dictonary
+
+student_data={
+    "shakil":{"id":1235,"age":20,"dep":"CSE"},
+    "fahim":{"id":1255,"age":26,"dep":"ECSE"}
+}
+print(student_data)
+
+print(student_data["shakil"])
+print(student_data["shakil"]["id"])
+
+#add
+student_data["shakil"]["phone"]="017490"
+print(student_data["shakil"])
+#del
+del student_data["shakil"]["phone"]
+print(student_data["shakil"])
+
+
+
+
+#nesting a list in dictionary
+
+student={
+"shakil":[1235,20,"CSE"],
+"sakib":[1235,260,"eCSE"],
+
+}
+print(student)
+print(student["sakib"])
