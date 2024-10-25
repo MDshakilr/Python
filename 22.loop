@@ -52,6 +52,12 @@ for x in fruits:
 
 
 
+list=["shakil",2,6,7,9]
+for i in range(len(list)):
+    print(list[i])
+
+
+
 
 #Loop in python by Shradha Khapra
 
