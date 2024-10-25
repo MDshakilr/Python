@@ -1,0 +1,20 @@
+#zip
+
+list1=["shakil","mahabub","pranto"]
+list2=["sE","web","web"]
+result=list(zip(list1,list2))
+print(result)
+
+
+'''
+A lambda function is a small anonymous function.
+
+A lambda function can take any number of arguments,
+but can only have one expression(single line expression).
+
+'''
+#lambda arguments : expression
+#def cal (a,b):
+print((lambda a,b: a+b)(2,3))
+   # return a+b
+#print(cal(2,3))
