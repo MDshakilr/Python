@@ -60,3 +60,26 @@ print(s3.nam,s3.mark)
 
 
 #object attribute>class attribute
+
+
+
+#final code
+
+class Car:
+    brand_name="BMW"
+
+   # def __init__(self,model_name):
+        #self.x=model_name
+        ##print("welcome")
+    def __init__ (self,color,serial_no,customer):
+        self.c=color
+        self.s=serial_no
+        self.cus=customer
+
+
+#s1 = Car("BM")
+#print(s1.x)
+s2 = Car("yellow", 7 ,"rofik")
+print(s2.c,s2.s,s2.cus)
+
+
