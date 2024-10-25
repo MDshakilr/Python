@@ -1,0 +1,73 @@
+'''
+
+File I/O in Python
+
+Python can be used to perform operations on a file. (read & write data)
+
+1.Text Files : .txt, .docx, .log etc.
+
+2. BinaAry Files : .mp4, .mov, .png, .jpeg etc.
+'''
+
+'''
+We have to open a file before reading or writing.
+
+f = open( “file_name”,“mode”)
+
+                         r : read mode
+                         w : write mode 
+        sample.txt
+        demo.docx
+
+data = f.read( )
+f.close( )
+'''
+
+#read part
+f = open("text.txt","r")#r+  =write and read both
+#data = f.read()
+data = f.read(7)#i am sh
+print(data)
+f.close()
+'''
+data = f.readline( ) #reads one line at a time
+data = f.read( ) #reads entire file
+
+'''
+f = open("text.txt","r")
+line1=f.readline()
+print(line1)
+
+line2 = f.readline()
+print(line2)
+
+line4=f.readline()
+print(line4)
+
+f.close()
+
+#write part
+f = open("text1.txt","w")
+f.write("i am boy shakil")
+#append
+f = open("text.txt","a")
+f.write("/n i am boy shakil")
+
+
+#r+  read +override (ponter start a)
+#w+  read +override
+#a+ read + append (pointer in end)
+
+
+#with syntax
+with open ("text.txt",'r') as f:
+    data = f.read()
+    print(data)
+#atumatic close hobe ai khane because i used with syntex
+
+
+#delete a file
+
+import os
+os.remove("simple.txt")
+
