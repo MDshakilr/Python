@@ -1,0 +1,62 @@
+#Python is an object oriented programming language.
+
+
+#Class''' & Object in Python
+
+'''
+Class is a blueprint for creating objects.
+
+class Student:
+
+name =
+
+“karan kumar”
+
+#creating class
+
+#creating object (instance)
+
+s1 = Student( )
+
+print( s1.name )
+'''
+
+class Student: #student= class
+
+    name="shakil"  #class atribuite
+    age=34
+
+s1 = Student() # s1=object
+print("Name:",s1.name)
+
+s2 = Student()
+print(s2.age)
+
+
+
+#init/constructor
+class Car:
+    def __init__(x):
+
+        print("hi")
+
+s1 = Car()
+
+
+class Car:
+    def __init__(x,name,mark):
+        x.nam=name  #object atribute
+        x.mark=mark
+        print("hello")
+
+
+s1 = Car("bmw",45)
+print(s1.nam)
+print(s1.mark)
+s2 = Car("toyota",47)
+print(s2.mark)
+s3= Car("mercedes",0)
+print(s3.nam,s3.mark)
+
+
+#object attribute>class attribute
