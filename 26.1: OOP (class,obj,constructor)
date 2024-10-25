@@ -83,3 +83,29 @@ s2 = Car("yellow", 7 ,"rofik")
 print(s2.c,s2.s,s2.cus)
 
 
+
+#more init not supprot
+#idea
+
+class Car:
+    brand_name = "BMW"
+
+    def __init__(self, model_name=None, color=None, serial_no=None, customer=None):
+        if model_name is not None:
+            self.x = model_name
+            print("Welcome - model initialization")
+        elif color is not None and serial_no is not None and customer is not None:
+            self.c = color
+            self.s = serial_no
+            self.cus = customer
+            print("Welcome - full details initialization")
+        else:
+            print("Invalid parameters")
+
+# Create an instance with model name only
+s1 = Car(model_name="BMWi")
+print(s1.x)
+
+# Create an instance with color, serial number, and customer details
+s2 = Car(color="yellow", serial_no=7, customer="rofik")
+print(s2.c, s2.s, s2.cus)
