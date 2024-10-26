@@ -1,0 +1,202 @@
+#method overloading
+'''
+class my_calculator:
+    def product(self,num1,num2):
+        print(num1+num2)
+
+#python a same name a multiple methods thakbe ma
+#jodi thake tahole shobar last method kaj korbe baki gula korbe na
+
+c1 =my_calculator()
+c1.product(3,5)
+c1.product(2,5)
+
+'''
+class my_calculator:
+    def product(self,num1=None,num2=None,num3=None):
+        if num1!=None and num2!=None and num3!= None:
+            print(num1*num2*num3)
+        elif num1 != None and num2 != None:
+            print(num1*num2)
+        else:
+            print(1*num1)
+
+    #python a same name a multiple methods thakbe ma
+#jodi thake tahole shobar last method kaj korbe baki gula korbe na
+
+c1 =my_calculator()
+c1.product(3,5)
+c1.product(2,4,5)
+c1.product(2)
+
+
+#n"th parameter
+
+class MyCal:
+    def product(self, *num):
+        pro = 1
+        for x in num:
+            pro *= x
+        print(pro)
+
+c1 = MyCal()
+c1.product(5, 6, 8, 8, 9)
+
+
+
+
+
+
+
+
+#constructor overloadimg
+
+#constucttor overloading possible na directly
+class Student:
+    def __init__(self, **info):     #** keyword arrgument
+        if len(info) == 3:
+            self.name = info['name']
+            self.id = info["id"]
+            self.cgpa = info['cgpa']
+        elif len(info) == 2:
+            self.name = info['name']
+            self.id = info['id']
+        elif len(info) == 1:
+            self.name = info['name']
+        else:
+            print("bye")
+
+# Creating instances of Student class with keyword arguments
+s1 = Student(name="shakil", id="345", cgpa="3.98")
+s2 = Student(name="rafi", id="346")
+s3 = Student(name="babor")
+print(s1.name,s1.id,s1.cgpa)
+print(s2.name,s2.id)
+print(s3.name)
+
+
+
+
+
+
+class Student:
+    def __init__(self, *info):  # Using *info to accept anonymous arguments
+        if len(info) == 3:
+            self.name = info[0]
+            self.id = info[1]
+            self.cgpa = info[2]
+        elif len(info) == 2:
+            self.name = info[0]
+            self.id = info[1]
+        elif len(info) == 1:
+            self.name = info[0]
+        else:
+            print("bye")
+
+# Creating instances of Student class with positional arguments
+s1 = Student("shakil", "345", "3.98")
+s2 = Student("rafi", "346")
+s3 = Student("babor")
+
+print(s1.name, s1.id, s1.cgpa)
+print(s2.name, s2.id)
+print(s3.name)
+
+
+
+#operator overloading
+'''
+Binary Operators:
+__add__(self, other): Implement the addition operator +.
+__sub__(self, other): Implement the subtraction operator -.
+__mul__(self, other): Implement the multiplication operator *.
+__truediv__(self, other): Implement the true division operator /.
+__floordiv__(self, other): Implement the floor division operator //.
+__mod__(self, other): Implement the modulo operator %.
+__pow__(self, other[, modulo]): Implement the power operator **.
+Comparison Operators:
+__eq__(self, other): Implement the equality operator ==.
+__ne__(self, other): Implement the not equal operator !=.
+__lt__(self, other): Implement the less than operator <.
+__le__(self, other): Implement the less than or equal operator <=.
+__gt__(self, other): Implement the greater than operator >.
+__ge__(self, other): Implement the greater than or equal operator >=.
+Assignment Operators:
+__iadd__(self, other): Implement the in-place addition operator +=.
+__isub__(self, other): Implement the in-place subtraction operator -=.
+__imul__(self, other): Implement the in-place multiplication operator *=.
+__itruediv__(self, other): Implement the in-place true division operator /=.
+__ifloordiv__(self, other): Implement the in-place floor division operator //=.
+__imod__(self, other): Implement the in-place modulo operator %=.
+__ipow__(self, other[, modulo]): Implement the in-place power operator **=.
+Unary Operators:
+__neg__(self): Implement the negation operator -.
+__pos__(self): Implement the unary plus operator +.
+__abs__(self): Implement the absolute value operator abs().
+__invert__(self): Implement the bitwise inversion operator ~.
+Mathematical Operators:
+__round__(self[, n]): Implement the round() function.
+__floor__(self): Implement the math.floor() function.
+__ceil__(self): Implement the math.ceil() function.
+__trunc__(self): Implement the math.trunc() function.
+
+'''
+
+
+
+
+class data:
+    def  __init__(self,x):
+        self.x=x
+
+    def  __add__(self,other):
+        return self.x + other.x
+num1 =  data(10)
+num2= data(23)
+
+str1= data("sa")
+str2= data("ha")
+#num1.__add__(num2)
+print(num1+num2)
+#str1__add__ (str2)
+print(str1+str2)
+
+
+
+
+
+
+class Data:
+    def __init__(self, x):
+        self.x = x
+
+    def __lt__(self, other):
+        return self.x < other.x
+
+num1 = Data(33)
+num2 = Data(45)
+
+if num1 < num2:
+    print("num1 is less than num2")
+else:
+    print("num2 is less than num1")
+
+
+
+
+class Data:
+    def __init__(self, x):
+        self.x = x
+
+    def __gt__(self, other):
+        return self.x > other.x
+
+num1 = Data(33)
+num2 = Data(45)
+
+if num1 > num2:
+    print("num1 is greater than num2")
+else:
+    print("num2 is greater than num1")
+
+
