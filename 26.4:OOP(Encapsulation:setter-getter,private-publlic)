@@ -1,0 +1,56 @@
+'''class Account:
+    def __init__(self,account_no,account_name):
+        self.account_no=account_no
+        self.account_name=account_name
+    def details(self):
+        print("Account No=",self.account_no)
+        print("Account name=",self.account_name)
+
+
+s1 = Account("23","shakil")
+s1.details()
+s1.account_no=25
+s1.details()
+'''
+#private= access only inside class,do not acces outside of class
+'''
+class Account:
+    def __init__(self,account_no,account_name):
+        self.__account_no=account_no#private instance variable
+        self.account_name=account_name
+    def details(self):
+        print("Account No=",self.__account_no)
+        print("Account name=",self.account_name)
+
+
+s1 = Account("23","shakil")
+#s1.details()
+s1.account_no=25# donot work it
+s1.details()
+'''
+
+#setter-getter method
+class Account:
+    def __init__(self, account_no, account_name):
+        self.__account_no = int(account_no)  # private instance variable
+        self.account_name = account_name
+
+    def details(self):
+        print("Account No =", self.__account_no)
+        print("Account name =", self.account_name)
+
+    def set_accountno(self, account_no):
+        if account_no > 0:
+            self.__account_no = account_no
+        else:
+            print("Invalid number")
+
+    def get_accountno(self):
+        return self.__account_no
+
+
+s1 = Account(23, "Shakil")
+s1.details()
+s1.set_accountno(55)
+print(s1.get_accountno())
+s1.details()
