@@ -61,3 +61,16 @@ print(s1.nam)
 print(s1.mark)
 Student.check_department("41230201235")
 
+
+
+
+#del in object in oop
+class Student():
+    def  __init__ (self,name):
+        self.nam=name
+
+s1=Student('shakil')
+print(s1.nam)
+
+#del s1.nam
+#print(s1.nam)
