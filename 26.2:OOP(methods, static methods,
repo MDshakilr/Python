@@ -1,0 +1,63 @@
+#function/method
+
+class Car:
+
+    def welcome(self):
+     print("welcome men")
+
+    def __init__(x,name,mark):
+        x.nam=name  #object atribute
+        x.mark=mark
+
+
+
+s1 = Car("bmw",45)
+s1.welcome()
+print(s1.nam)
+print(s1.mark)
+s2 = Car("toyota",47)
+print(s2.mark)
+s3 = Car("mercedes",0)
+print(s3.nam,s3.mark)
+
+
+
+
+
+
+
+
+
+
+#static methods
+#it is for only class
+#do not need self parameter
+'''
+class Student:
+
+@staticmethod
+
+def college( ):#decorator
+
+print( “ABC College” )
+
+'''
+class Student:
+    def __init__(self, name, mark):
+        self.nam = name
+        self.mark = mark
+
+    @staticmethod
+    def check_department(Id):
+        if Id[6:8] == "01":
+            print("cse")
+        elif Id[6:8] == "41":
+            print("cs")
+        else:
+            print("other")
+
+s1 = Student("shakil", "97")
+print(s1.nam)
+print(s1.mark)
+Student.check_department("41230201235")
+
