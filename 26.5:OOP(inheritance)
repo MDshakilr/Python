@@ -1,0 +1,78 @@
+#1.single inheritance(base(1)and derived class(1))
+class Animal:
+    # attribute and method of the parent class
+    name = ""
+
+    def eat(self):
+        print("I can eat")
+
+
+# inherit from Animal
+class Dog(Animal):
+
+    # new method in subclass
+    def display(self):
+        # access name attribute of superclass using self
+        print("My name is ", self.name)
+
+
+# create an object of the subclass
+labrador = Dog()
+
+# access superclass attribute and method
+labrador.name = "Rohu"
+labrador.eat()
+
+# call subclass method
+labrador.display()
+'''
+2.multi_level_ inheritance  (base_>derived>derived)
+class SuperClass:
+    # Super class code here
+
+class DerivedClass1(SuperClass):
+    # Derived class 1 code here
+
+class DerivedClass2(DerivedClass1):
+    # Derived class 2 code here
+'''
+class Car:
+    @staticmethod
+    def start():
+        print("car strat")
+
+class Toyota(Car):
+    def __init__(self,brand):
+        self.brand=brand
+
+class Bmw(Toyota):
+    def __init__(self,type):
+        self.type=type
+
+car1 = Bmw("classic")
+car1.start()#method
+car2 =Toyota("black")
+print(car2.brand)#attribute
+
+
+#3.multiple inheritance
+class Car:
+    @staticmethod
+    def start():
+        print("Car started")
+
+class Bmw:
+    def __init__(self, car_type):
+        self.car_type = car_type
+
+class A(Car, Bmw):
+    def __init__(self, car_type):
+        super().__init__(car_type)
+
+    def off(self):
+        print("Car off")
+
+
+car = A("SUV")
+car.start()
+car.off()
