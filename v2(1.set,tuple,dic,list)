@@ -1,0 +1,45 @@
+
+
+                                               #list  mutable
+
+x=["apple","mango","fish"];
+x[1]="berry"   #change
+print(x)
+x=["apple","mango","fish"];
+x.append("berry")   #append
+print(x)
+x.remove("berry")
+print(x)
+
+
+                              #set mutable,duplicate value not supported heere,undordered no index
+#add,remove
+x={"apple","mango","fish","apple"}
+print(x)
+x.add('hi')
+print(x)
+x.remove("mango")
+print(x)
+
+                                                  #tuple immutble
+#but i can change it using (tuple to list)
+x=("apple","mango","fish");
+temp=list(x)
+temp[1]='hi'
+x=tuple(temp)
+print(x)
+
+
+
+                                                      #dictionary
+
+
+student= {
+"name" :'x',
+"age":24
+}
+print(student["name"]) #print
+student["age"]=25      #add
+print(student)
+student.pop("age")
+print(student)
