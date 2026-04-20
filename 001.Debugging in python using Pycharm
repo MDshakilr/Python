@@ -1,0 +1,55 @@
+Debugging= identify and fix problem..
+
+1. Set a Breakpoint
+Open your Python file
+Click on the left margin (next to line numbers)
+A red dot 🔴 will appear → this is a breakpoint
+
+👉 It tells PyCharm: “Stop execution here”
+
+▶️ 2. Run in Debug Mode
+Click the bug icon 🐞 (top right), or
+Press Shift + F9
+
+👉 Your program will start and pause at the breakpoint
+
+🔍 3. Debug Window (Main Tools)
+
+When execution stops, you’ll see:
+
+➤ Variables Panel
+Shows current values of variables
+Helps you check if values are correct or wrong
+➤ Console
+Shows output and errors
+⏭️ 4. Control Execution
+
+These buttons are very important:
+
+Step Over (F8)
+→ Run next line (skip inside functions)
+Step Into (F7)
+→ Go inside a function
+Step Out (Shift + F8)
+→ Exit current function
+Resume (F9)
+→ Continue until next breakpoint
+🧠 5. Watch Variables (Optional)
+Right-click a variable → Add to Watches
+Track its value changes step by step
+⚠️ 6. Common Debug Use Cases
+
+✔ Check wrong output
+✔ Find logical errors
+✔ Track variable values
+✔ Understand program flow
+
+🔥 Example
+x = 10
+y = 0
+z = x / y   # breakpoint here
+print(z)
+
+👉 Run debugger → it stops before error
+👉 You can inspect x and y
+👉 You’ll quickly see division by zero problem
