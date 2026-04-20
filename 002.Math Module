@@ -1,0 +1,17 @@
+
+import math as m
+print(m.sqrt(25))
+print(m.ceil(5.7))
+print(m.floor(5.7))
+print(m.pow(2,3))
+print(m.fabs(-45.8))
+print(m.factorial(1))
+print(m.sin(90))
+print(m.sin(m.radians(90)))
+print(m.pi)
+
+
+
+import math
+x=math.pow(2,3)
+print(x)
