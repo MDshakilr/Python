@@ -1,0 +1,13 @@
+import statistics as st
+x=st.mean([2,3,4,5,6])
+print(x)
+y=st.median([2,3,4,5,6])
+print(y)
+z=st.mode([2,23,4,5,6])
+print(z)
+y=st.stdev([2,3,45,6,7])
+print(y)
+
+
+import random as r
+print(r.random())
